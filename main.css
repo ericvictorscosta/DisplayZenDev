@@ -8,27 +8,16 @@
 body {
     display: flex;
 }
+
+
+/*------------ end Padrão ----------*/
+/*---------- Initial Header --------*/
 header {
     width: 100vw;
     position: fixed;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
 
-}
-.backwhite {
-    width: 50vw;
-    height: 100vh;
-    background-color: #FEFEFE;
-}
-.backyellow {
-    width: 50vw;
-    height: 100vh;
-    background-color: #FFC003;
-}
-/*------------ end Padrão ----------*/
-/*---------- Initial Header --------*/
-.div {
-    
 }
 .div-header {
     display: flex;
@@ -37,12 +26,13 @@ header {
 }
 div > .h3-logo {
     font-family: 'Sansita Swashed', cursive;
-    margin-left: 30px;
-    font-size: 25px;
+    margin-left: 40px;
+    font-size: 29px;
     cursor: pointer;
 }
 div > .social {
     font-family: 'Poppins', sans-serif;
+    margin-right: 200px;
 
 }
 div > .icon-menu {
@@ -68,35 +58,39 @@ div > .cd {
 /*------------ end Header ----------*/
 /*--------- Initial Content --------*/
 main {
-    position: fixed;
     height: 100vh;
-    width: 100vw;
-    
 }
-
-.container-content {
+.backwhite {
     display: flex;
-    
-}
-
-.first-div {
-    display: flex;
+    width: 50vw;
+    height: 100vh;
     flex-direction: column;
-    
-}
+    justify-content: center;
+    background-color: #FEFEFE;
 
+}
+.first-div {
+    margin-left: 60px;   
+}
+.dx {
+    margin-bottom: 10px;
+}
 .text-h4 {
     font-family: 'Poppins', sans-serif;
     color: gray;
     font-weight: 400;
     text-decoration: none;
     font-size: 18px;
+    margin-bottom: 0px;
 }
 .text-h2 {
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
-    font-size: 47px;
+    font-size: 45px;
     margin-top: 10px;
+}
+.necessary {
+    color: #FFC003;
 }
 .text-h3 {
     font-family: 'Poppins', sans-serif;
@@ -104,34 +98,32 @@ main {
     font-weight: 400;
     text-decoration: none;
     font-size: 19px;
-    margin-top: 17px;
+    margin-bottom: 35px;
 }
-.necessary {
-    color: #FFC003;
-}
-
 .button {
     font-family: 'Sansita Swashed', cursive;
     padding: 12px 45px;
-    background-color: #FFC003;
+    border-radius: 8px;
     text-decoration: none;
     appearance: none;
-    border: 0px;
+    background-color: #FFC003;
     box-shadow: 0px 0px 10px 5px #ffdd0d;
-    border-radius: 8px;
-    margin-top: 20px;
 }
-
-.div-banner {
-    max-width: 570px;
-    height: 450px;
-    position: relative;
-
+/*-------------- End --------------*/
+/*--------- Initial Banner --------*/
+.backyellow {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC003;
 }
 .banner {
-    position: absolute;
-    width: 340px;
+    width: 450px;
     max-height: 100vh;
     border-radius: 20px;
-    margin-right: 70px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
