@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Sansita+Swashed:wght@300&family=Sintony:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+header {
+    width: 100vw;
+    position: fixed;
+    margin: 5px;
+    padding: 10px;
+
+}
+.backwhite {
+    width: 50vw;
+    height: 100vh;
+    background-color: #FEFEFE;
+}
+.backyellow {
+    width: 50vw;
+    height: 100vh;
+    background-color: #FFC003;
+}
+/*------------ end Padrão ----------*/
+/*---------- Initial Header --------*/
+.div {
+    
+}
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div > .h3-logo {
+    font-family: 'Sansita Swashed', cursive;
+    margin-left: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+div > .social {
+    font-family: 'Poppins', sans-serif;
+
+}
+div > .icon-menu {
+    margin-right: 30px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+div > .ab {
+    color: gray;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 18px;
+}
+div > .cd {
+    color: gray;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 18px;
+}
+/*------------ end Header ----------*/
+/*--------- Initial Content --------*/
+main {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.container-content {
+    display: flex;
+    
+}
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-h4 {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+}
+.text-h2 {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 47px;
+    margin-top: 10px;
+}
+.text-h3 {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 19px;
+    margin-top: 17px;
+}
+.necessary {
+    color: #FFC003;
+}
+
+.button {
+    font-family: 'Sansita Swashed', cursive;
+    padding: 12px 45px;
+    background-color: #FFC003;
+    text-decoration: none;
+    appearance: none;
+    border: 0px;
+    box-shadow: 0px 0px 10px 5px #ffdd0d;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.div-banner {
+    max-width: 570px;
+    height: 450px;
+    position: relative;
+
+}
+.banner {
+    position: absolute;
+    width: 340px;
+    max-height: 100vh;
+    border-radius: 20px;
+    margin-right: 70px;
+}
