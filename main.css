@@ -108,6 +108,8 @@ main {
     appearance: none;
     background-color: #FFC003;
     box-shadow: 0px 0px 10px 5px #ffdd0d;
+    border: #FFC003;
+    cursor: pointer;
 }
 /*-------------- End --------------*/
 /*--------- Initial Banner --------*/
@@ -119,6 +121,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #FFC003;
+    background-repeat: no-repeat;
 }
 .banner {
     width: 450px;
@@ -126,4 +129,20 @@ main {
     border-radius: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
+    
+}
+a.cd:hover{
+    text-decoration: none;
+    color: white;
+}
+a.ab:hover{
+    text-decoration: none;
+    color:#ffc003;
+}
+button.button:hover {
+    text-decoration: none;
+    background-color: #ffdd0d;
+    box-shadow: 0px 0px 5px 5px #ffdd0d;
+    border: #ffdd0d;
+    cursor: pointer;
 }
