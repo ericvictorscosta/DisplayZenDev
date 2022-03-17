@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Sansita+Swashed:wght@300&family=Sintony:wght@400;700&display=swap');
-
+:root {
+    font-size: 16px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,8 @@ body {
 header {
     width: 100vw;
     position: fixed;
-    margin: 5px;
-    padding: 15px;
+    margin: 0.313rem;
+    padding: 0.938rem ;
 
 }
 .div-header {
@@ -26,34 +28,34 @@ header {
 }
 div > .h3-logo {
     font-family: 'Sansita Swashed', cursive;
-    margin-left: 40px;
-    font-size: 29px;
+    margin-left: 2.5rem;
+    font-size: 1.813rem;
     cursor: pointer;
 }
 div > .social {
     font-family: 'Poppins', sans-serif;
-    margin-right: 200px;
+    margin-right: 12.5rem;
 
 }
 div > .icon-menu {
-    margin-right: 30px;
+    margin-right: 1.875rem;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
 }
 div > .ab {
     color: gray;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 18px;
+    margin-right: 1.125rem;
 }
 div > .cd {
     color: gray;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 18px;
+    margin-left: 1.125rem;
 }
 /*------------ end Header ----------*/
 /*--------- Initial Content --------*/
@@ -70,46 +72,59 @@ main {
 
 }
 .first-div {
-    margin-left: 60px;   
+    margin-left: 3.75rem;   
 }
 .dx {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .text-h4 {
     font-family: 'Poppins', sans-serif;
     color: gray;
     font-weight: 400;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 0px;
 }
 .text-h2 {
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
-    font-size: 45px;
-    margin-top: 10px;
+    font-size: 2.813rem;
+    margin-top: 0.625rem;
 }
 .necessary {
     color: #FFC003;
+    text-shadow: -4px 3px 7px black;
 }
 .text-h3 {
     font-family: 'Poppins', sans-serif;
     color: gray;
     font-weight: 400;
     text-decoration: none;
-    font-size: 19px;
-    margin-bottom: 35px;
+    font-size: 1.188rem;
+    margin-bottom: 2.188rem;
 }
 .button {
     font-family: 'Sansita Swashed', cursive;
-    padding: 12px 45px;
-    border-radius: 8px;
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     appearance: none;
-    background-color: #FFC003;
-    box-shadow: 0px 0px 10px 5px #ffdd0d;
     border: #FFC003;
     cursor: pointer;
+    background-color: #FFC003;
+    background-image: linear-gradient(rgb(157, 138, 138), rgb(157, 138, 138));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    box-shadow: -4px 5px 16px 9px #feefdc;
+    background-position-x: right;
+    transition: background-size 500ms;
+    
+}
+button.button:hover {
+    background-size: 100% 100% ;
+    background-position-x: left;
+    
 }
 /*-------------- End --------------*/
 /*--------- Initial Banner --------*/
@@ -139,10 +154,319 @@ a.ab:hover{
     text-decoration: none;
     color:#ffc003;
 }
-button.button:hover {
-    text-decoration: none;
-    background-color: #ffdd0d;
-    box-shadow: 0px 0px 5px 5px #ffdd0d;
-    border: #ffdd0d;
-    cursor: pointer;
+/* _________________________________________________________
+______________________________________     
+____________________
+____________________________________________________________
+______________@MediaQuery_______________________
+____________
+_______________________________--
+__________________________________________________- */
+
+/* CABEÇALHO ------------------------------------------------------ */ 
+@media only screen and (min-width : 1800px) and (max-width : 2660px) {
+    header {
+        margin: 0.313rem;
+        padding: 0.938rem ;
+    } /* Cabeçalho */
+    div > .h3-logo {
+        margin-left: 3.3rem;
+        font-size: 3.125rem;
+    } /* Logo */
+    div > .social {
+        margin-right: 21.5rem;
+        font-size: 1.563rem;
+    
+    } /* Insta and Tt */
+    div > .icon-menu {
+        width: 3.438rem;
+        height: 3.438rem;
+    } /* Icon Menu */
+}
+@media only screen and (min-width : 1630px) and (max-width : 1799px) {
+    header {
+        margin: 0.313rem;
+        padding: 0.938rem ;
+    } /* Cabeçalho */
+    div > .div-header {
+        margin-top: 0.813rem;
+    } /* header margem */
+    div > .h3-logo {
+        margin-left: 3.3rem;
+        font-size: 3.125rem;
+    } /* Logo */
+    div > .social {
+        margin-right: 21.5rem;
+        font-size: 1.563rem;
+    
+    } /* Insta and Tt */
+    div > .icon-menu {
+        width: 3.438rem;
+        height: 3.438rem;
+    }
+}
+@media only screen and (min-width : 1470px) and (max-width : 1629px) {
+    header {
+        margin: 0.313rem;
+        padding: 0.938rem ;
+    } /* Cabeçalho */
+    div > .div-header {
+        margin-top: 0.813rem;
+    } /* header margem */
+    div > .h3-logo {
+        margin-left: 3.3rem;
+        font-size: 3rem;
+    } /* Logo */
+    div > .social {
+        margin-right: 20.8rem;
+        font-size: 1.47rem;
+    
+    } /* Insta and Tt */
+    div > .icon-menu {
+        width: 3.1rem;
+        height: 3.1rem;
+    }
+}
+/* END CABEÇALHO ------------------------------------------------------ */
+
+
+@media only screen and (min-width : 2404px) and (max-width : 2660px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.688rem;
+    }
+    .text-h2 {
+        font-size: 4.375rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 2.313rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.688rem 5rem;
+        border-radius: 0.9rem;
+        font-size: 1.5rem;
+    }
+    .banner {
+        width: 57.125rem;
+        margin-bottom: 0px;
+    }
+
+}
+@media only screen and (min-width : 2060px) and (max-width : 2403px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.6rem;
+    }
+    .text-h2 {
+        font-size: 4.175rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 2.113rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.488rem 4rem;
+        border-radius: 0.9rem;
+        font-size: 1.4rem;
+    }
+    .banner {
+        width: 54rem;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media only screen and (min-width : 1900px) and (max-width : 2059px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.49rem;
+    }
+    .text-h2 {
+        font-size: 3.85rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 2rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.4rem 3.5rem;
+        border-radius: 0.9rem;
+        font-size: 1.4rem;
+    }
+    .banner {
+        width: 51.9rem;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media only screen and (min-width : 1750px) and (max-width : 1899px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.49rem;
+    }
+    .text-h2 {
+        font-size: 3.5rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 2rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.3rem 3.4rem;
+        border-radius: 0.9rem;
+        font-size: 1.2rem;
+    }
+    .banner {
+        width: 48.9rem;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media only screen and (min-width : 1630px) and (max-width : 1749px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.35rem;
+    }
+    .text-h2 {
+        font-size: 3.3rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 2rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.23rem 3.2rem;
+        border-radius: 0.9rem;
+        font-size: 1.2rem;
+    }
+    .banner {
+        width: 45.9rem;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media only screen and (min-width : 1470px) and (max-width : 1629px) {
+    .first-div {
+        margin-left: 4.551rem;   
+    }
+    .dx {
+        margin-bottom: 0.25rem;
+    }
+    .text-h4 {
+        font-size: 1.28rem;
+    }
+    .text-h2 {
+        font-size: 3.1rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 1.8rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.23rem 3.2rem;
+        border-radius: 0.9rem;
+        font-size: 1.2rem;
+    }
+    .banner {
+        width: 43.9rem;
+        margin-bottom: 0px;
+    }
+    
+}
+@media only screen and (min-width : 1440px) and (max-width : 1469px) {
+    .banner {
+        width: 40.5rem;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1100px) {
+    header {
+        margin: 0.313rem;
+        padding: 0.938rem ;
+    } /* Cabeçalho */
+    div > .div-header {
+        margin-top: 0.813rem;
+    } /* header margem */
+    div > .h3-logo {
+        margin-left: 2.3rem;
+        font-size: 2.1rem;
+    } /* Logo */
+    div > .social {
+        margin-right: 13.8rem;
+        font-size: 1.3rem;
+    
+    } /* Insta and Tt */
+    div > .icon-menu {
+        width: 3.1rem;
+        height: 3.1rem;
+    }
+    .first-div {
+        margin-left: 2.7rem;
+    }
+    .text-h4 {
+        font-size: 1.3rem;
+    }
+    .text-h2 {
+        font-size: 2.55rem;
+        margin-top: 0.625rem;
+    }
+    .text-h3 {
+        font-size: 1.7rem;
+        margin-top: 0.9rem;
+        margin-bottom: 1.9rem;
+    }
+    .button {
+        padding: 1.2rem 2.24rem;
+        border-radius: 0.9rem;
+        font-size: 1.3rem;
+    }
+    .banner {
+        width: 28.5rem;
+        margin-bottom: 0px;
+        margin-right: 1rem;
+    }
+    
 }
