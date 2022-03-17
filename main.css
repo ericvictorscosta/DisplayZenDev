@@ -29,15 +29,27 @@ header {
 div > .h3-logo {
     font-family: 'Sansita Swashed', cursive;
     margin-left: 2.5rem;
-    font-size: 1.813rem;
+    font-size: 2.4rem;
     cursor: pointer;
 }
+.mobile-menu {
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    margin: 8px;
+}
+
 div > .social {
     font-family: 'Poppins', sans-serif;
     margin-right: 12.5rem;
 
 }
 div > .icon-menu {
+    display: block;
     margin-right: 1.875rem;
     cursor: pointer;
     width: 2.188rem;
@@ -49,15 +61,26 @@ div > .ab {
     cursor: pointer;
     text-decoration: none;
     margin-right: 1.125rem;
+    margin-left: 1.125rem;
 }
 div > .cd {
     color: gray;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
+    margin-right: 1.125rem;
     margin-left: 1.125rem;
 }
+.yl:hover {
+    text-decoration: none;
+    color: #FFC003;
+}
+.wh:hover {
+    text-decoration: none;
+    color: #feefdc;
+}
 /*------------ end Header ----------*/
+
 /*--------- Initial Content --------*/
 main {
     height: 100vh;
@@ -82,13 +105,13 @@ main {
     color: gray;
     font-weight: 400;
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin-bottom: 0px;
 }
 .text-h2 {
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
-    font-size: 2.813rem;
+    font-size: 3.5rem;
     margin-top: 0.625rem;
 }
 .necessary {
@@ -101,11 +124,11 @@ main {
     font-weight: 400;
     text-decoration: none;
     font-size: 1.188rem;
-    margin-bottom: 2.188rem;
+    margin-bottom: 1.5rem;
 }
 .button {
     font-family: 'Sansita Swashed', cursive;
-    padding: 0.9rem 2.5rem;
+    padding: 1.2rem 3.3rem;
     font-size: 1.1rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -139,334 +162,173 @@ button.button:hover {
     background-repeat: no-repeat;
 }
 .banner {
-    width: 450px;
+    width: 36.563rem;
     max-height: 100vh;
     border-radius: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
     
 }
-a.cd:hover{
-    text-decoration: none;
-    color: white;
-}
-a.ab:hover{
-    text-decoration: none;
-    color:#ffc003;
-}
-/* _________________________________________________________
-______________________________________     
-____________________
-____________________________________________________________
-______________@MediaQuery_______________________
-____________
-_______________________________--
-__________________________________________________- */
-
-/* CABEÇALHO ------------------------------------------------------ */ 
-@media only screen and (min-width : 1800px) and (max-width : 2660px) {
-    header {
-        margin: 0.313rem;
-        padding: 0.938rem ;
-    } /* Cabeçalho */
+/* @MediaQuery for 4k ------------------------------------------------------ */ 
+@media screen and (min-width: 2200px) and (max-width: 2800px) {
     div > .h3-logo {
-        margin-left: 3.3rem;
-        font-size: 3.125rem;
-    } /* Logo */
+        margin-left: 4rem;
+        font-size: 3.7rem;
+    }
+    div > .icon-menu {
+        margin-right: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
     div > .social {
-        margin-right: 21.5rem;
+        margin-right: 18.5rem;
         font-size: 1.563rem;
-    
-    } /* Insta and Tt */
-    div > .icon-menu {
-        width: 3.438rem;
-        height: 3.438rem;
-    } /* Icon Menu */
-}
-@media only screen and (min-width : 1630px) and (max-width : 1799px) {
-    header {
-        margin: 0.313rem;
-        padding: 0.938rem ;
-    } /* Cabeçalho */
-    div > .div-header {
-        margin-top: 0.813rem;
-    } /* header margem */
-    div > .h3-logo {
-        margin-left: 3.3rem;
-        font-size: 3.125rem;
-    } /* Logo */
-    div > .social {
-        margin-right: 21.5rem;
-        font-size: 1.563rem;
-    
-    } /* Insta and Tt */
-    div > .icon-menu {
-        width: 3.438rem;
-        height: 3.438rem;
     }
-}
-@media only screen and (min-width : 1470px) and (max-width : 1629px) {
-    header {
-        margin: 0.313rem;
-        padding: 0.938rem ;
-    } /* Cabeçalho */
-    div > .div-header {
-        margin-top: 0.813rem;
-    } /* header margem */
-    div > .h3-logo {
-        margin-left: 3.3rem;
-        font-size: 3rem;
-    } /* Logo */
-    div > .social {
-        margin-right: 20.8rem;
-        font-size: 1.47rem;
-    
-    } /* Insta and Tt */
-    div > .icon-menu {
-        width: 3.1rem;
-        height: 3.1rem;
-    }
-}
-/* END CABEÇALHO ------------------------------------------------------ */
-
-
-@media only screen and (min-width : 2404px) and (max-width : 2660px) {
     .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
+        margin-left: 6rem ;
     }
     .text-h4 {
-        font-size: 1.688rem;
+        font-size: 1.9rem;
     }
     .text-h2 {
-        font-size: 4.375rem;
-        margin-top: 0.625rem;
+        font-size: 4.813rem;
     }
     .text-h3 {
-        font-size: 2.313rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
+        font-size: 2.4rem;
     }
     .button {
-        padding: 1.688rem 5rem;
-        border-radius: 0.9rem;
-        font-size: 1.5rem;
-    }
-    .banner {
-        width: 57.125rem;
-        margin-bottom: 0px;
-    }
-
-}
-@media only screen and (min-width : 2060px) and (max-width : 2403px) {
-    .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
-    }
-    .text-h4 {
-        font-size: 1.6rem;
-    }
-    .text-h2 {
-        font-size: 4.175rem;
-        margin-top: 0.625rem;
-    }
-    .text-h3 {
-        font-size: 2.113rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
-    }
-    .button {
-        padding: 1.488rem 4rem;
-        border-radius: 0.9rem;
-        font-size: 1.4rem;
-    }
-    .banner {
-        width: 54rem;
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media only screen and (min-width : 1900px) and (max-width : 2059px) {
-    .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
-    }
-    .text-h4 {
-        font-size: 1.49rem;
-    }
-    .text-h2 {
-        font-size: 3.85rem;
-        margin-top: 0.625rem;
-    }
-    .text-h3 {
-        font-size: 2rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
-    }
-    .button {
-        padding: 1.4rem 3.5rem;
-        border-radius: 0.9rem;
-        font-size: 1.4rem;
-    }
-    .banner {
-        width: 51.9rem;
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media only screen and (min-width : 1750px) and (max-width : 1899px) {
-    .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
-    }
-    .text-h4 {
-        font-size: 1.49rem;
-    }
-    .text-h2 {
-        font-size: 3.5rem;
-        margin-top: 0.625rem;
-    }
-    .text-h3 {
-        font-size: 2rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
-    }
-    .button {
-        padding: 1.3rem 3.4rem;
-        border-radius: 0.9rem;
-        font-size: 1.2rem;
-    }
-    .banner {
-        width: 48.9rem;
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media only screen and (min-width : 1630px) and (max-width : 1749px) {
-    .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
-    }
-    .text-h4 {
-        font-size: 1.35rem;
-    }
-    .text-h2 {
-        font-size: 3.3rem;
-        margin-top: 0.625rem;
-    }
-    .text-h3 {
-        font-size: 2rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
-    }
-    .button {
-        padding: 1.23rem 3.2rem;
-        border-radius: 0.9rem;
-        font-size: 1.2rem;
-    }
-    .banner {
-        width: 45.9rem;
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media only screen and (min-width : 1470px) and (max-width : 1629px) {
-    .first-div {
-        margin-left: 4.551rem;   
-    }
-    .dx {
-        margin-bottom: 0.25rem;
-    }
-    .text-h4 {
-        font-size: 1.28rem;
-    }
-    .text-h2 {
-        font-size: 3.1rem;
-        margin-top: 0.625rem;
-    }
-    .text-h3 {
-        font-size: 1.8rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
-    }
-    .button {
-        padding: 1.23rem 3.2rem;
-        border-radius: 0.9rem;
-        font-size: 1.2rem;
-    }
-    .banner {
-        width: 43.9rem;
-        margin-bottom: 0px;
-    }
-    
-}
-@media only screen and (min-width : 1440px) and (max-width : 1469px) {
-    .banner {
-        width: 40.5rem;
-        margin-bottom: 0px;
-    }
-    
-}
-
-@media only screen and (min-width : 1024px) and (max-width : 1100px) {
-    header {
-        margin: 0.313rem;
-        padding: 0.938rem ;
-    } /* Cabeçalho */
-    div > .div-header {
-        margin-top: 0.813rem;
-    } /* header margem */
-    div > .h3-logo {
-        margin-left: 2.3rem;
+        padding: 1.2rem 3rem;
         font-size: 2.1rem;
-    } /* Logo */
-    div > .social {
-        margin-right: 13.8rem;
-        font-size: 1.3rem;
-    
-    } /* Insta and Tt */
+    }
+    .banner {
+        width: 57.5rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 1440px) {
+    div > .h3-logo {
+        margin-left: 2rem;
+        font-size: 2.4rem;
+    }
     div > .icon-menu {
-        width: 3.1rem;
-        height: 3.1rem;
+        margin-right: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    div > .social {
+        margin-right: 12rem;
+        font-size: 1.1rem;
     }
     .first-div {
-        margin-left: 2.7rem;
+        margin-left: 4rem ;
     }
     .text-h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .text-h2 {
-        font-size: 2.55rem;
-        margin-top: 0.625rem;
+        font-size: 2.7rem;
     }
     .text-h3 {
-        font-size: 1.7rem;
-        margin-top: 0.9rem;
-        margin-bottom: 1.9rem;
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
     }
-    .button {
-        padding: 1.2rem 2.24rem;
-        border-radius: 0.9rem;
+    .button {   
+        padding: 0.9rem 2.5rem;
         font-size: 1.3rem;
     }
     .banner {
-        width: 28.5rem;
-        margin-bottom: 0px;
-        margin-right: 1rem;
+        width: 36.625rem;
+        margin-right: 1.2rem;
+        margin-bottom: 2rem;
     }
-    
 }
+@media screen and (max-width: 1024px) {
+    div > .h3-logo {
+        margin-left: 2.7rem;
+        font-size: 2.2rem;
+    }
+    div > .icon-menu {
+        margin-right: 1.7rem;
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    div > .social {
+        margin-right: 12.4rem;
+        font-size: 1rem;
+    }
+    .first-div {
+        margin-left: 4rem ;
+    }
+    .text-h4 {
+        font-size: 1.02rem;
+    }
+    .text-h2 {
+        font-size: 2.5rem;;
+    }
+    .text-h3 {
+        font-size: 1.35rem;
+        margin-bottom: 1.2rem;
+    }
+    .button {   
+        padding: 0.99rem 2rem;
+        font-size: 1.2rem;
+    }
+    .banner {
+        width: 29rem;
+        margin-right: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
