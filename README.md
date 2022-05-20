@@ -1,4 +1,4 @@
 # DisplayZenDev
-LandingPage | HTML , CSS, | Projeto Voltado para Aprendizado do Básico do Desenvolvimento Web.
+LandingPage | HTML , CSS, JavaScript | Projeto Voltado para Aprendizado do Básico do Desenvolvimento Web.
 
 
